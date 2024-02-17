@@ -9,7 +9,7 @@ app.use(express.json());
 // routes
 app.use("/", idCardRoute)
 
-mongoose.connect("mongodb+srv://gauravmishra99696:FSWD1234@cluster0.4gbyrw3.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("Your mongo db url")
 .then(() => {
     console.log('Connected! YOU ARE CONNECTED TO YOUR DATABASE!') 
     app.listen(3000, () => {
